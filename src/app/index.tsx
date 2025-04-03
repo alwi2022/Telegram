@@ -1,13 +1,10 @@
+import { Redirect } from "expo-router";
 import { StatusBar, Text, View } from "react-native";
 import { StyleSheet  } from "react-native";
 
-export default function App(){
+export default function HomeScreen(){
     return(
-        <View style={styles.container}>
-            <Text>
-                Hello World! This is my first React Native app.
-            </Text>
-        </View>
+    <Redirect href={'/(home)/(tabs)'} />
     )
 }
 
